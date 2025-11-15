@@ -13,5 +13,6 @@ function insert_Row() {
 	cell2.textContent="New Cell2";
 	row.appendChild(cell2);
   
-  document.querySelector("#sampleTable").prepend(row);
+  let tab=document.querySelector("#sampleTable tbody")||document.querySelector("#sampleTable");
+	tab.prepend(row);
 }
